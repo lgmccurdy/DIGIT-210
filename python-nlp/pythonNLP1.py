@@ -4,8 +4,8 @@ import spacy
 nlp = spacy.load('en_core_web_sm')
 
 # print text as wordstrings
-chatgbt = open('lgm-chatgbt-results-2.txt', 'r', encoding='utf8')
-words = chatgbt.read()
+chatgpt = open('lgm-chatgpt-results-2.txt', 'r', encoding='utf8')
+words = chatgpt.read()
 wordstrings = str(words)
 print(wordstrings)
 
