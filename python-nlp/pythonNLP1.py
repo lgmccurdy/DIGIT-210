@@ -1,7 +1,7 @@
 import spacy
 
 # nlp = spacy.cli.download("en_core_web_sm")
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_md')
 
 # print text as wordstrings
 chatgpt = open('lgm-chatgpt-results-2.txt', 'r', encoding='utf8')
@@ -33,3 +33,5 @@ for token in doc:
 print("Named Entities:")
 for ent in doc.ents:
     print(f"{ent.text} - {ent.label_}")
+
+
