@@ -40,6 +40,7 @@ def readTextFiles(filepath):
         for token in tokens:
             if (token and token.vector_norm):
                 if wordOfInterest.similarity(token) > .3:
+                    # added str here as dicttoxml was giving me errors
                     highSimilarityDict[str(token)] = wordOfInterest.similarity(token)
                     # The line above creates the structure for each entry in my dictionary.
                     # print(token.text, "about this much similar to", wordOfInterest, ": ", wordOfInterest.similarity(token))
